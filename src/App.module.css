@@ -1,0 +1,83 @@
+.App {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.Wrapper {
+  max-width: 1020px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.Wrapper > div {
+  width: 100%;
+}
+
+.FilterWrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.Loader {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+.UserInteraction {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.SearchWrapper {
+  position: relative;
+}
+
+.SearchIcon {
+  position: absolute;
+  top: 0.5em;
+  left: 0.25em;
+  cursor: pointer;
+}
+
+.SearchBox {
+  padding: 0.5em 1.75em;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .Loader {
+    animation: Loader-spin infinite 1.5s ease-in-out;
+  }
+}
+
+.App-header {
+  text-align: center;
+  background-color: #282c34;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes Loader-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media screen and (min-width: 1366px) {
+  .App {
+    max-width: calc(100vw - 18px);
+  }
+}
